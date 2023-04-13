@@ -52,6 +52,7 @@ function calculate() {
     let exp = parseInt(document.getElementById('exp').value);
     let expReq = reqLevel[45] - (reqLevel[level - 1] + exp);
     document.getElementById('expcalc').innerHTML = expReq;
+    expcalc();
 }
 
 function expcalc() {
