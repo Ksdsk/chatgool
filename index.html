@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>챗-굴</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900">
+
+    <div class="mx-6 my-6">
+        <h1 class="text-3xl font-bold text-center text-slate-100">
+            LCK LEGENDARIES 챌린저까지 가는 챗굴 계산기!
+        </h1>
+        <div class="flex my-6 justify-center gap-3">
+            <h2 class="text-2xl font-bold text-center text-slate-100">
+                현재 레벨: 
+            </h2>
+            <input type="number" name="level" id="level"/>
+            <h2 class="text-2xl font-bold text-center text-slate-100">
+                의 EXP: 
+            </h2>
+            <input type="number" name="exp" id="exp"/>
+            <button class="bg-red-400 px-3 rounded-md hover:bg-red-300" onclick="calculate()">계산</button>
+        </div>
+
+        <div class="flex justify-center gap-2">
+            <h3 class="text-md font-bold text-center text-slate-100">
+                하.. 챌린저까지 
+            </h3>
+            <span class="bg-blue-300 px-2" id="expcalc">200850</span>
+            <h3 class="text-md font-bold text-center text-slate-100">
+                exp 이나 남았네...
+            </h3>
+        </div>
+
+        <div class="flex justify-center gap-2 my-6">
+            <h3 class="text-md font-bold text-center text-slate-100">
+                내가 하루에 exp 를 
+            </h3>
+            <input type="number" name="daily" id="daily" placeholder="3000" oninput="expcalc()"/>
+            <h3 class="text-md font-bold text-center text-slate-100">
+                이나 쌓으면...
+            </h3>
+        </div>
+
+        <div class="flex justify-center gap-2">
+            <h3 class="text-md font-bold text-center text-slate-100">
+                챌린저까지
+            </h3>
+            <span class="bg-blue-300 px-2" id="daycalc">7</span>
+            <h3 class="text-md font-bold text-center text-slate-100">
+                일 이나 남았네...
+            </h3>
+        </div>
+
+        <div class="flex justify-center my-40 text-white">
+            <h3 class="text-md font-bold text-center text-slate-100">
+                챗굴이들 홧팅!!!
+            </h3>
+        </div>
+        
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
